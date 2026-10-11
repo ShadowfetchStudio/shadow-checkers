@@ -45,7 +45,7 @@ A flagship 3D draughts game for Linux with three rule sets — **English/America
 
 ## Install and run
 
-**Download:** grab `shadow-checkers-2.0.0-linux-x86_64` from the [latest release](https://github.com/Shadowfetchapps/shadow-checkers/releases/latest), then `chmod +x` it and run it. It is a single self-contained binary.
+**Download:** grab `shadow-checkers-2.0.0-linux-x86_64` from the [latest release](https://github.com/ShadowfetchStudio/shadow-checkers/releases/latest), then `chmod +x` it and run it. It is a single self-contained binary.
 
 **Build from source:**
 
@@ -98,4 +98,4 @@ The suites cover all three variants (English perft to depth 8, flying kings, Tur
 - [Assets](docs/ASSETS.md)
 - [Changelog](CHANGELOG.md)
 
-Sibling project: [Shadow Chess 3D](https://github.com/Shadowfetchapps/shadow-chess-3d).
+Sibling project: [Shadow Chess 3D](https://github.com/ShadowfetchStudio/shadow-chess-3d).
