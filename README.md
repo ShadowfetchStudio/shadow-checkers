@@ -99,3 +99,9 @@ The suites cover all three variants (English perft to depth 8, flying kings, Tur
 - [Changelog](CHANGELOG.md)
 
 Sibling project: [Shadow Chess 3D](https://github.com/ShadowfetchStudio/shadow-chess-3d).
+
+## License
+
+MIT. See [LICENSE](LICENSE).
+
+Like this project? You can [buy me a coffee](https://www.buymeacoffee.com/shadowfetcu).
