@@ -4,7 +4,13 @@
 #   ./tools/run_tests.sh --suite=ai      # one synchronous suite (english, variants, notation, ai, puzzles)
 set -uo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-GODOT="${GODOT:-$HOME/.local/bin/godot}"
+GODOT="${GODOT:-$(command -v godot || printf '%s' "$HOME/.local/bin/godot")}"
+if ! command -v "$GODOT" >/dev/null 2>&1; then
+  echo "Godot not found. Install it on PATH or set GODOT to its executable." >&2
+  exit 127
+fi
+# Fresh clones need the editor to register global classes and import assets.
+"$GODOT" --headless --path "$ROOT" --import --quit || exit $?
 status=0
 "$GODOT" --headless --path "$ROOT" --script res://tests/test_runner.gd -- "$@" || status=1
 if [[ $# -eq 0 ]]; then
